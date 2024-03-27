@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>ToDo List</h1>
+  <div class="todoapp">
+    <form id="js-form">
+      <input id="js-form-input" class="new-todo" type="text" placeholder="What need to be done?" autocomplete="off">
+      <button>保存</button>
+    </form>
+    <!-- メインの処理 -->
+    <div id="js-todo-list" class="todo-list">
+
+    </div>
+    <footer class="footer">
+      <span id="js-todo-count">全てのタスク: 0</span>
+      <span id="js-done-todo-count">完了済み: 0</span>
+      <span id="js-not-done-todo-count">未完了: 0</span>
+    </footer>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
