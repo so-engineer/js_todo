@@ -10,15 +10,19 @@ export class App {
     const inputElement = document.querySelector('#js-form-input');
     const containerElement = document.querySelector('#js-todo-list');
     const todoItemCountElement = document.querySelector('#js-todo-count');
-    const todoDoneItemCountElement = document.querySelector('#js-done-todo-count');
-    const todoNotDoneItemCountElement = document.querySelector('#js-not-done-todo-count');
+    const todoDoneItemCountElement = document.querySelector(
+      '#js-done-todo-count'
+    );
+    const todoNotDoneItemCountElement = document.querySelector(
+      '#js-not-done-todo-count'
+    );
 
     this.#todoListModel.onChange(() => {
       // HTML文字列からHTML要素を作成
       const todoListElement = element`<ul></ul>`;
 
       const todoItems = this.#todoListModel.getTodoItems();
-      todoItems.forEach(item => {
+      todoItems.forEach((item) => {
         // 三項演算子（条件 ? 値1 : 値2）
         const todoItemElement = item.completed
           ? element`<li><input type="checkbox" class="checkbox" checked><s>${item.title}</s>
@@ -40,7 +44,6 @@ export class App {
 
         const updateButtonElement = todoItemElement.querySelector('.update');
         updateButtonElement.addEventListener('click', () => {
-
           const inputElement = document.createElement('input');
           inputElement.type = 'text';
 
@@ -69,7 +72,7 @@ export class App {
           let result = confirm('本当に削除してもよろしいですか？');
           if (result) {
             this.#todoListModel.deleteTodo({
-              id: item.id
+              id: item.id,
             });
           }
         });
@@ -87,12 +90,13 @@ export class App {
 
     formElement.addEventListener('submit', (event) => {
       event.preventDefault();
-      this.#todoListModel.addTodo(new TodoItemModel({
-        title: inputElement.value,
-        completed: false,
-      }));
+      this.#todoListModel.addTodo(
+        new TodoItemModel({
+          title: inputElement.value,
+          completed: false,
+        })
+      );
       inputElement.value = '';
     });
   }
 }
-
