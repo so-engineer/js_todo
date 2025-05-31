@@ -80,6 +80,10 @@ body {
     border: none;
 }
 
+.todo-list li input[type="text"] {
+    margin-right: 10px;
+}
+
 /* .todo-list li .delete {
     position: absolute;
     top: 0;
@@ -96,5 +100,3 @@ body {
     padding: 10px 15px;
     border-top: 1px solid #e6e6e6;
 }
-
-
