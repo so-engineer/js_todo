@@ -2,6 +2,8 @@
 
 このプロジェクトは、JavaScriptを使用して構築されたシンプルなToDoリストアプリケーションです。
 
+https://so-engineer.github.io/js_todo/
+
 ## 特徴
 
 ToDo Listは、日々のタスク管理を効率的に行うためのWebアプリケーションです。シンプルな操作性を重視し、使いやすさを追求しています。
