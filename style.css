@@ -4,15 +4,6 @@ body {
     padding: 0;
 }
 
-/* button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: none;
-    font-size: 100%;
-    vertical-align: baseline;
-} */
-
 body {
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4em;
@@ -83,16 +74,6 @@ body {
 .todo-list li input[type="text"] {
     margin-right: 10px;
 }
-
-/* .todo-list li .delete {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
-    color: #cc9a9a;
-} */
 
 .footer {
     color: #777;

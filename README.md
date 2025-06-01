@@ -40,10 +40,19 @@ cd js_todo
 
 ```
 .
-├── index.html         # メインのHTMLファイル
-├── style.css          # スタイル定義
-├── index.js           # メインのJavaScriptファイル
-└── README.md          # プロジェクトの説明
+├── index.html                # メインのHTMLファイル
+├── style.css          　　　  # スタイル定義
+├── index.js                  # エントリーポイント
+├── src/                      # ソースコードディレクトリ
+│   ├── App.js                # メインアプリケーションロジック
+│   ├── EventEmitter.js       # イベント管理クラス
+│   ├── model/                # データモデル
+│   │   ├── TodoListModel.js  # ToDoリスト管理
+│   │   └── TodoItemModel.js  # ToDo項目定義
+│   └── view/                 # ビュー関連
+│       └── html-utils.js     # HTML操作ユーティリティ
+├── LICENSE                   # ライセンスファイル
+└── README.md                 # プロジェクトの説明
 ```
 
 ## その他
